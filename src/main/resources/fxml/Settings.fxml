@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.JFXButton?>
+
+<!--<?import com.jfoenix.controls.JFXButton?>
+--><?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="945.0" style="-fx-background-color: #f7f7ff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lucidexnewnew.SettingsController" >
+    <stylesheets>
+        <URL value="@/styles/settings.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="17.0" layoutY="101.0" prefHeight="410.0" prefWidth="445.0" styleClass="anchorpane" stylesheets="@../styles/settings.css">
+         <children>
+            <Label layoutX="23.0" layoutY="18.0" text="Personal Information">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="23.0" layoutY="51.0" prefHeight="60.0" prefWidth="395.0" styleClass="subAnchorpane" stylesheets="@../styles/settings.css">
+               <children>
+                  <Label layoutX="16.0" layoutY="9.0" text="Username">
+                     <font>
+                        <Font name="System Bold" size="12.4" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblUSername" layoutX="16.0" layoutY="31.0" text="LoremIpsum" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="25.0" layoutY="125.0" prefHeight="60.0" prefWidth="395.0" styleClass="subAnchorpane" stylesheets="@../styles/settings.css">
+               <children>
+                  <Label layoutX="16.0" layoutY="9.0" text="Email Address">
+                     <font>
+                        <Font name="System Bold" size="12.4" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblEmail" layoutX="16.0" layoutY="31.0" text="LoremIpsum@lorem.com" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="25.0" layoutY="198.0" prefHeight="60.0" prefWidth="395.0" styleClass="subAnchorpane" stylesheets="@../styles/settings.css">
+               <children>
+                  <Label layoutX="16.0" layoutY="9.0" text="Password">
+                     <font>
+                        <Font name="System Bold" size="12.4" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblPassword" layoutX="16.0" layoutY="31.0" text="* * * * * * * * * *" />
+                  <JFXButton fx:id="btnShow" layoutX="315.0" layoutY="19.0" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #8f8e8e;" text="Show" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="27.0" layoutY="273.0" prefHeight="60.0" prefWidth="395.0" styleClass="subAnchorpane" stylesheets="@../styles/settings.css">
+               <children>
+                  <Label layoutX="16.0" layoutY="9.0" text="Last Login">
+                     <font>
+                        <Font name="System Bold" size="12.4" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblLoginTime" layoutX="16.0" layoutY="31.0" text="10:00 AM 02-04-2019" />
+                  <JFXButton fx:id="bntSignOut" layoutX="315.0" layoutY="19.0" style="-fx-background-color: #8f8e8e;" text="Sign Out" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnPersonalInfo" layoutX="338.0" layoutY="356.0" prefHeight="19.0" prefWidth="80.0" style="-fx-background-color: #4aa7ef;" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="483.0" layoutY="101.0" prefHeight="410.0" prefWidth="445.0" styleClass="anchorpane" stylesheets="@../styles/settings.css">
+         <children>
+            <Label layoutX="23.0" layoutY="18.0" text="Game Settings">
+               <font>
+                  <Font name="MyriadPro-Bold" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="25.0" layoutY="49.0" prefHeight="50.0" prefWidth="395.0" styleClass="subAnchorpane" stylesheets="@../styles/settings.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="15.0" text="Game Alerts">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXToggleButton fx:id="tglGameAlerts" layoutX="321.0" layoutY="-4.0" text=" " unToggleColor="#eb7b80" unToggleLineColor="#d0454b" />
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="btnGameSettings" layoutX="338.0" layoutY="356.0" prefHeight="19.0" prefWidth="80.0" style="-fx-background-color: #4aa7ef;" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane layoutX="27.0" layoutY="115.0" prefHeight="50.0" prefWidth="395.0" styleClass="subAnchorpane" stylesheets="@../styles/settings.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="15.0" text="Warning Alert Time">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+<!--                  <JFXTextField fx:id="txtWarnAlert" layoutX="308.0" layoutY="13.0" prefHeight="25.0" prefWidth="30.0" text="10" unFocusColor="#27ae60" />-->
+                  <Label layoutX="346.0" layoutY="17.0" text="Min">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="27.0" layoutY="177.0" prefHeight="50.0" prefWidth="395.0" styleClass="subAnchorpane" stylesheets="@../styles/settings.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="15.0" text="Close Alert Time">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="lblCloseAlert" layoutX="308.0" layoutY="13.0" prefHeight="25.0" prefWidth="30.0" text="60" unFocusColor="#27ae60" />
+                  <Label layoutX="346.0" layoutY="17.0" text="Min">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="27.0" layoutY="239.0" prefHeight="94.0" prefWidth="395.0" styleClass="subAnchorpane" stylesheets="@../styles/settings.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="10.0" text="Game Auto Close">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXToggleButton fx:id="tglGameClose" layoutX="321.0" layoutY="-4.0" selected="true" text=" " unToggleColor="#eb7b80" unToggleLineColor="#d0454b" />
+                  <Label layoutX="13.0" layoutY="32.0" prefHeight="54.0" prefWidth="300.0" text="Fusce condimentum scelerisque ipsum, at pretium massavestibulum eu. Phasellus rhoncus nisi sed faucibus gravida. Donec sit amet orci vitae elit maximus cursus ." wrapText="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="31.0" layoutY="37.0" text="Settings">
+         <font>
+            <Font name="MyriadPro-Bold" size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="17.0" layoutY="549.0" prefHeight="135.0" prefWidth="911.0" styleClass="anchorpane" stylesheets="@../styles/settings.css">
+         <children>
+            <Label layoutX="21.0" layoutY="21.0" text="Tips">
+               <font>
+                  <Font name="MyriadPro-Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="48.0" prefHeight="54.0" prefWidth="782.0" text="Vestibulum aliquet accumsan justo, sed sollicitudin augue dignissim a. Sed convallis sodales mi, sit amet euismod magna porta vitae. Fusce condimentum scelerisque ipsum, at pretium massa vestibulum eu. Phasellus rhoncus nisi sed faucibus gravida. Donec sit amet orci vitae elit maximus cursus et vitae mauris." wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<!--onAction="loginHandle"-->
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lucidexnewnew.SignInController">
+    <children>
+        <AnchorPane prefHeight="515.0" prefWidth="400.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <AnchorPane layoutX="200.0" layoutY="1.0" prefHeight="515.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <Label fx:id="lblSgnIn" layoutX="300.0" layoutY="55.0" text="Sign In" textFill="#373737" AnchorPane.topAnchor="126.0">
+                            <font>
+                                <Font name="Calibri Bold" size="32.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lblUssername" layoutX="300.0" layoutY="185.0" text="Username">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lblPassword" layoutX="300.0" layoutY="250.0" text="Password">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtUsername" layoutX="300.0" layoutY="212.0" prefHeight="25.0" prefWidth="236.0" />
+                        <PasswordField fx:id="txtPassword" layoutX="300.0" layoutY="278.0" prefHeight="25.0" prefWidth="236.0" />
+                        <JFXButton fx:id="btnSignIn" layoutX="300.0" layoutY="328.0" onAction="#loginhandler" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #252744;" text="Sign In" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btnForgot" layoutX="411.0" layoutY="328.0" prefHeight="31.0" prefWidth="126.0" style="-fx-background-color: #ffffff;" text="Forgot Password?" textFill="#464444">
+                            <font>
+                                <Font name="Calibri Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <Label fx:id="lblCreatAcc" layoutX="300.0" layoutY="423.0" text="Dont Have an Account?">
+                            <font>
+                                <Font name="Calibri Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <JFXButton fx:id="btnCreatAcc" layoutX="295.0" layoutY="443.0" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Create Account" textFill="#464444">
+                            <font>
+                                <Font name="Calibri Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </AnchorPane>
+                <ImageView fx:id="signframe" fitHeight="515.0" fitWidth="459.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../GFX/SignIn.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="823.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lucidexnewnew.MainNavController">
+   <left>
+      <VBox prefHeight="823.0" prefWidth="335.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="apnew" fitHeight="248.0" fitWidth="335.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../GFX/Layer%205.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnHome" graphicTextGap="12.0" onAction="#gohome" prefHeight="50.0" prefWidth="330.0" style="-fx-background-color: #ffffff;" text="Home">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnGames" graphicTextGap="12.0" onAction="#gogames" prefHeight="50.0" prefWidth="330.0" style="-fx-background-color: #ffffff;" text="Games">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/gamepad.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnPlayTime" graphicTextGap="12.0" onAction="#goplaytimes" prefHeight="50.0" prefWidth="330.0" style="-fx-background-color: #ffffff;" text="Play Times">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/clock.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnHelp" graphicTextGap="12.0" onAction="#gohelp" prefHeight="50.0" prefWidth="330.0" style="-fx-background-color: #ffffff;" text="Help">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/question.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSettings" graphicTextGap="12.0" onAction="#gosettings" prefHeight="50.0" prefWidth="330.0" style="-fx-background-color: #ffffff;" text="Settings">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/gear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   
+<!--      <AnchorPane fx:id="ap" prefHeight="823.0" prefWidth="945.0" style="-fx-background-color: #ffff06;"  />-->
+   
+</BorderPane>

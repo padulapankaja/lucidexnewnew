@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.JFXButton?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="945.0" style="-fx-background-color: #f7f7ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lucidexnewnew.GameDetailsController" >
+    <stylesheets>
+        <URL value="@/styles/gamedetails.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="157.0" fitWidth="200.0" layoutX="50.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../GFX/farcry.png" />
+         </image></ImageView>
+      <Label layoutX="278.0" layoutY="69.0" text="Farcry 3 Edens Gate">
+         <font>
+            <Font name="MyriadPro-Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="88.0" prefHeight="102.0" prefWidth="560.0" text="Far Cry 3 is a 2012 first-person shooter developed by Ubisoft Montreal and published by Ubisoft. It is the third main installment in the Far Cry series. The game takes place on Rook Islands, a tropical archipelago which can be freely explored by players. Gameplay focuses on combat and exploration" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="278.0" layoutY="191.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #48abd2;" text="Play" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="443.0" layoutY="191.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #f44141;" stylesheets="@../styles/gamedetails.css" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="77.0" layoutY="312.0" prefHeight="421.0" prefWidth="791.0" styleClass="tableview" stylesheets="@../styles/gamedetails.css">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Date" />
+          <TableColumn prefWidth="75.0" text="Start Time" />
+            <TableColumn prefWidth="75.0" text="End Time" />
+            <TableColumn prefWidth="75.0" text="Total Time" />
+        </columns>
+         <columnResizePolicy>
+<!--            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
