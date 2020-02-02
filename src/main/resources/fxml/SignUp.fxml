@@ -46,7 +46,7 @@
                                 <Font name="Calibri Bold" size="14.0" />
                             </font>
                         </Label>
-                        <JFXButton fx:id="btnff" layoutX="466.0" layoutY="448.0" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color: #ffffff;" text="Sign In" textFill="#464444">
+                        <JFXButton fx:id="btnff" layoutX="466.0" layoutY="448.0" onAction="#gotoSign" prefHeight="27.0" prefWidth="75.0" style="-fx-background-color: #ffffff;" text="Sign In" textFill="#464444">
                             <font>
                                 <Font name="Calibri Bold" size="14.0" />
                             </font>

@@ -12,6 +12,6 @@ import com.mycompany.model.Users;
  * @author User
  */
 public interface IUserService {
-    
+    //user registration function
     public boolean userRegister(Users user);
 }

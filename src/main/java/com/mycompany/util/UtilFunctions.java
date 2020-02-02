@@ -6,6 +6,8 @@
 package com.mycompany.util;
 
 import java.io.IOException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
@@ -16,6 +18,7 @@ import javafx.scene.layout.BorderPane;
  */
 public class UtilFunctions {
     
+    //create page load function to load pages from btn clicks
      public void loadPage(String page, BorderPane bp) {
         try {
             Parent root;
@@ -28,7 +31,21 @@ public class UtilFunctions {
         }
 
     }
-     
-     
+     //password hash function
+     	public static String get_SHA_256_SecurePassword(String passwordToHash) {
+		String generatedPassword = null;
+		try {
+			MessageDigest md = MessageDigest.getInstance("SHA-256");
+			byte[] bytes = md.digest(passwordToHash.getBytes());
+			StringBuilder sb = new StringBuilder();
+			for (int i = 0; i < bytes.length; i++) {
+				sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+			}
+			generatedPassword = sb.toString();
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		}
+		return generatedPassword;
+	}
      
 }

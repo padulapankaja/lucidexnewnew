@@ -20,9 +20,11 @@ import java.util.logging.Logger;
  * @author User
  */
 public class UserServiceIml implements  IUserService{
-private static Connection connection;
-private PreparedStatement preparedStatement;
-private SqlScripts sqlscripts;
+private static Connection connection;    //conncection object create
+private PreparedStatement preparedStatement;  //preparedStatement object create
+private SqlScripts sqlscripts; //sqlscripts object create
+    
+    //create user register function add to user's details to db
     @Override
     public boolean userRegister(Users user) {
         

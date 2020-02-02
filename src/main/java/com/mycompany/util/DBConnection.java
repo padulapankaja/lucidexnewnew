@@ -16,21 +16,20 @@ import java.sql.Statement;
  * @author User
  */
 public class DBConnection {
-     Connection conn = null;
+
+    Connection conn = null;
     Statement stmt = null;
 
     public static Connection ConDB() {
         try {
-            System.out.println("Class for name not  fine  : ");
+           
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("Class for name fine  : ");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/gametracking?characterEncoding=latin1", "root", "admin");
-                        
 
             System.out.println("Hey DB Connect Successfully");
             return con;
         } catch (ClassNotFoundException | SQLException ex) {
-            System.out.println("Where is the MySQL JDBC Driver?" +ex);
+            System.out.println("Where is the MySQL JDBC Driver?" + ex);
         }
         return null;
 
