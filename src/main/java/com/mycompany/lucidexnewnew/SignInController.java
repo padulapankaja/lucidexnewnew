@@ -68,20 +68,24 @@ public class SignInController implements Initializable {
 
     }
 
+    //handle login 
     @FXML
     private void loginhandler(ActionEvent event) throws IOException {
 
         UtilFunctions utilFunctions = new UtilFunctions();
-
+        //get user input
         String Username = txtUsername.getText();
         String Password = txtPassword.getText();
 
+        //password hash
         String password = utilFunctions.get_SHA_256_SecurePassword(txtPassword.getText());
 
         IUserService userService = new UserServiceIml();
 
+        //check user already exist
         int users = userService.checkuseravailable(Username, password);
 
+        //if user valid map to main nav
         if (users > 0) {
 
             Node node = (Node) event.getSource();
@@ -93,14 +97,16 @@ public class SignInController implements Initializable {
             stage.setScene(scene);
             stage.show();
         } else {
+            //if user invalid print error message
             JOptionPane.showMessageDialog(null, "Sorry You Have No Account ", "  " + "Warning  !", JOptionPane.INFORMATION_MESSAGE);
-             txtUsername.setText("");
-             txtPassword.setText("");
-             txtUsername.requestFocus();
+            txtUsername.setText("");
+            txtPassword.setText("");
+            txtUsername.requestFocus();
         }
 
     }
 
+    //if user  did not have account then goto sign up
     @FXML
     private void gotosignup(ActionEvent event) {
 

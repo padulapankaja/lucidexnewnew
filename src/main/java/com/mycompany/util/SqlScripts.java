@@ -10,10 +10,11 @@ package com.mycompany.util;
  * @author User
  */
 public class SqlScripts {
-    
 
-    	public static final String INSERTUSERS = "INSERT INTO users(UserName, UserEmail, UserPassword) VALUES(?, ?, ?)";
-        
-        public static final String USERAVAILABLE = "Select count(*) from users where UserEmail = ? and UserPassword = ? ;";
-        
+    //user insert
+    public static final String INSERTUSERS = "INSERT INTO users(UserName, UserEmail, UserPassword) VALUES(?, ?, ?)";
+
+    //check user already have account or not (signin and signup purposes)
+    public static final String USERAVAILABLE = "Select count(*) from users where UserEmail = ? and UserPassword = ? ;";
+
 }

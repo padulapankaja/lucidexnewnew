@@ -14,7 +14,9 @@ import com.mycompany.model.Users;
 public interface IUserService {
     //user registration function
     public boolean userRegister(Users user);
-    public boolean login(String username, String password);
+//    public boolean login(String username, String password);
+    
+    //check user availablity (if user already signup , user can not create account again)
     public int checkuseravailable(String username, String password) ;
 
 }

@@ -84,11 +84,12 @@ public class SignUpController implements Initializable {
         IUserService userService = new UserServiceIml();
 
         //get user inputs
-        String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
+        String regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";  //check email valid or not
         String name = txtUsernameUp.getText();
         String email = txtEmailUp.getText();
         String password = utilfunction.get_SHA_256_SecurePassword(txtPasswordUp.getText());  //password hash using SHA256 method
 
+        //check user inputs null or not
         if (name.equalsIgnoreCase("")) {
 
             lblusernamreq.setText("required");
@@ -121,25 +122,25 @@ public class SignUpController implements Initializable {
         }
 
         int users = userService.checkuseravailable(email, password);
-        
-        if(users > 0){
-        
-         JOptionPane.showMessageDialog(null, "Hey " + name + "  Already you have account  ", " " + "Thank You !", JOptionPane.INFORMATION_MESSAGE);
-          error++;
-          
-          txtUsernameUp.setText("");
-          txtEmailUp.setText("");
-          txtPasswordUp.setText("");
-          txtUsernameUp.requestFocus();
-          
-          
+
+        if (users > 0) {
+
+            JOptionPane.showMessageDialog(null, "Hey " + name + "  Already you have account  ", " " + "Thank You !", JOptionPane.INFORMATION_MESSAGE);
+            error++;
+
+            //clear user inputs
+            txtUsernameUp.setText("");
+            txtEmailUp.setText("");
+            txtPasswordUp.setText("");
+            txtUsernameUp.requestFocus();
+
         }
-        
 
         System.out.println("Users Count : " + users);
 
         System.out.println("Error Couunt : " + error);
 
+        //if no any error create user object and set values
         if (error == 0) {
             Users user = new Users();  //create user object
 
@@ -171,10 +172,9 @@ public class SignUpController implements Initializable {
         } else {
             //JOptionPane.showMessageDialog(null, "Please fill correctly !!", "  " + "Try Again !", JOptionPane.INFORMATION_MESSAGE);
         }
-        
-        
-        if(error > 0){
-        JOptionPane.showMessageDialog(null, "Please fill correctly !!", "  " + "Try Again !", JOptionPane.INFORMATION_MESSAGE);
+
+        if (error > 0) {
+            JOptionPane.showMessageDialog(null, "Please fill correctly !!", "  " + "Try Again !", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
