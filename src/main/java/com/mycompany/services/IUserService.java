@@ -18,5 +18,8 @@ public interface IUserService {
     
     //check user availablity (if user already signup , user can not create account again)
     public int checkuseravailable(String username, String password) ;
+    
+     //get userId  from username
+    public int getUserId(String userEmail);
 
 }

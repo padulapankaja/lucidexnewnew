@@ -16,5 +16,19 @@ public class SqlScripts {
 
     //check user already have account or not (signin and signup purposes)
     public static final String USERAVAILABLE = "Select count(*) from users where UserEmail = ? and UserPassword = ? ;";
+    
+    
+        public static final String USERID = "select Id from users where UserEmail = ? ";
+
+    
+    public static final String USERAUDITINSERT = "INSERT INTO useraudit (uid, date, time) VALUES ( ? , ? , ?)";
+
+
+    
+    
+    
+    
+    
+    
 
 }

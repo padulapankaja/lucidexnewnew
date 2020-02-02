@@ -115,4 +115,32 @@ public class UserServiceIml implements IUserService {
 
     }
 
+    public int getUserId(String userEmail) {
+        int userId = 0;
+        try {
+
+            connection = DBConnection.ConDB();
+            preparedStatement = connection.prepareStatement(sqlscripts.USERID);
+            connection.setAutoCommit(false);
+            preparedStatement.setString(1, userEmail);
+
+            preparedStatement.execute();
+            connection.commit();
+
+            //get result
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                userId = resultSet.getInt(1);
+            }
+            connection.commit();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(UserServiceIml.class.getName()).log(Level.SEVERE, null, ex);
+
+            return userId;
+        }
+
+        return userId;
+    }
+
 }

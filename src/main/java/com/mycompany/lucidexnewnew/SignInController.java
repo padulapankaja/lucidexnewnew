@@ -6,12 +6,19 @@ package com.mycompany.lucidexnewnew;
  * and open the template in the editor.
  */
 import com.jfoenix.controls.JFXButton;
+import com.mycompany.model.UserAudit;
+import com.mycompany.services.IUserAuditService;
 import com.mycompany.services.IUserService;
+import com.mycompany.services.UserAuditServiceIml;
 import com.mycompany.services.UserServiceIml;
 import com.mycompany.util.DBConnection;
 import com.mycompany.util.UtilFunctions;
 import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -73,6 +80,7 @@ public class SignInController implements Initializable {
     private void loginhandler(ActionEvent event) throws IOException {
 
         UtilFunctions utilFunctions = new UtilFunctions();
+        UserAudit useraudit = new UserAudit();
         //get user input
         String Username = txtUsername.getText();
         String Password = txtPassword.getText();
@@ -81,12 +89,27 @@ public class SignInController implements Initializable {
         String password = utilFunctions.get_SHA_256_SecurePassword(txtPassword.getText());
 
         IUserService userService = new UserServiceIml();
+        IUserAuditService userAudit = new UserAuditServiceIml();
 
         //check user already exist
         int users = userService.checkuseravailable(Username, password);
 
         //if user valid map to main nav
         if (users > 0) {
+
+            LocalDate currentTime = java.time.LocalDate.now();
+
+           
+
+            Calendar calendar = Calendar.getInstance();
+            
+            SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+
+            useraudit.setId(userService.getUserId(Username));
+            useraudit.setDate(currentTime.toString());
+            useraudit.setTime(formatter.format(calendar.getTime()));
+
+            userAudit.lastLoginDetails(useraudit);
 
             Node node = (Node) event.getSource();
             Stage stage = (Stage) node.getScene().getWindow();
