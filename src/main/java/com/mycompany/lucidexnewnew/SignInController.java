@@ -102,8 +102,8 @@ public class SignInController implements Initializable {
            
 
             Calendar calendar = Calendar.getInstance();
-            
-            SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+
+            SimpleDateFormat formatter = new SimpleDateFormat("YYY-MM-DD HH:mm:ss");
 
             useraudit.setId(userService.getUserId(Username));
             useraudit.setDate(currentTime.toString());
