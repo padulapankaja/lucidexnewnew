@@ -65,7 +65,7 @@ public class MainNavController implements Initializable {
 
     @FXML
     private void gogames(ActionEvent event) {
-          kk.loadPage("GameDetails",  bp);
+          kk.loadPage("AllGames",  bp);
              btnGames.requestFocus();
     }
 

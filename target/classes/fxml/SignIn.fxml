@@ -50,7 +50,7 @@
                                 <Font name="Calibri Bold" size="14.0" />
                             </font>
                         </Label>
-                        <JFXButton fx:id="btnCreatAcc" layoutX="295.0" layoutY="443.0" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Create Account" textFill="#464444">
+                        <JFXButton fx:id="btnCreatAcc" layoutX="295.0" layoutY="443.0" onAction="#gotosignup" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #ffffff;" text="Create Account" textFill="#464444">
                             <font>
                                 <Font name="Calibri Bold" size="14.0" />
                             </font>

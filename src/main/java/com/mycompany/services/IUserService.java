@@ -14,4 +14,7 @@ import com.mycompany.model.Users;
 public interface IUserService {
     //user registration function
     public boolean userRegister(Users user);
+    public boolean login(String username, String password);
+    public int checkuseravailable(String username, String password) ;
+
 }

@@ -56,6 +56,9 @@
                                 <Font size="14.0" />
                             </font>
                         </Label>
+                  <Label fx:id="lblusernamreq" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="415.0" layoutY="171.0" prefHeight="25.0" prefWidth="118.0" textFill="#e80f0f" />
+                  <Label fx:id="lblemailreq" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="417.0" layoutY="244.0" prefHeight="25.0" prefWidth="118.0" textFill="#e80f0f" />
+                  <Label fx:id="lblpwdreq" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="416.0" layoutY="310.0" prefHeight="25.0" prefWidth="118.0" textFill="#e80f0f" />
                     </children>
                 </AnchorPane>
                 <ImageView fitHeight="515.0" fitWidth="459.0" pickOnBounds="true" preserveRatio="true">

@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -13,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="945.0" style="-fx-background-color: #f7f7ff;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.mycompany.lucidexnewnew.AllGamesController"  >
+<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="945.0" style="-fx-background-color: #f7f7ff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lucidexnewnew.AllGamesController">
     <stylesheets>
         <URL value="@/styles/allgames.css" />
     </stylesheets>
@@ -41,9 +42,11 @@
                      </image>
                   </ImageView>
                   <Label text="Far Cry" />
-                  <JFXButton />
+                  <JFXButton alignment="CENTER" text="Play" />
+                  <Button fx:id="playTimeInAllGamesView" mnemonicParsing="false" onAction="#playtimesInAllGamesView" text="Play TImes" />
                </children>
             </VBox>
+            <Button fx:id="addgame" mnemonicParsing="false" onAction="#addgame" prefHeight="293.0" prefWidth="242.0" text="Add Games" GridPane.columnIndex="3" GridPane.rowIndex="1" />
          </children>
       </GridPane>
       <AnchorPane layoutX="59.0" layoutY="670.0" prefHeight="105.0" prefWidth="828.0" styleClass="anchorpane" stylesheets="@../styles/allgames.css">

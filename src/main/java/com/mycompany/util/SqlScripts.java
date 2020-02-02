@@ -11,7 +11,9 @@ package com.mycompany.util;
  */
 public class SqlScripts {
     
-    	public static final String INSERTUSERS = "INSERT INTO users(UserName, UserEmail, UserPassword) VALUES(?, ?, ?)";
 
+    	public static final String INSERTUSERS = "INSERT INTO users(UserName, UserEmail, UserPassword) VALUES(?, ?, ?)";
+        
+        public static final String USERAVAILABLE = "Select count(*) from users where UserEmail = ? and UserPassword = ? ;";
         
 }
