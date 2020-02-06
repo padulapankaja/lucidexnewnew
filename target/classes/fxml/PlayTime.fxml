@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="945.0" style="-fx-background-color: #ffffff;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.mycompany.lucidexnewnew.PlayTimeController">
+    <stylesheets>
+        <URL value="@/styles/playtime.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="29.0" layoutY="79.0" prefHeight="273.0" prefWidth="527.0" styleClass="anchorpane" stylesheets="@../styles/allgames.css">
+         <children>
+            <Label layoutX="22.0" layoutY="6.0" text="Total Gameplay">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <BarChart layoutX="22.0" layoutY="39.0" prefHeight="228.0" prefWidth="475.0">
+               <xAxis>
+                  <CategoryAxis prefWidth="697.0" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="578.0" layoutY="79.0" prefHeight="273.0" prefWidth="340.0" styleClass="anchorpane" stylesheets="@../styles/allgames.css">
+         <children>
+            <Label layoutX="22.0" layoutY="6.0" text="Games By Play Time">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <PieChart layoutX="22.0" layoutY="52.0" prefHeight="207.0" prefWidth="213.0" />
+         </children>
+      </AnchorPane>
+      <TableView layoutX="31.0" layoutY="379.0" prefHeight="386.0" prefWidth="883.0" styleClass="tableview" stylesheets="@../styles/gamedetails.css">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Date" />
+            <TableColumn prefWidth="75.0" text="Game" />
+            <TableColumn prefWidth="75.0" text="Start Time" />
+            <TableColumn prefWidth="75.0" text="End Time" />
+            <TableColumn prefWidth="75.0" text="Total Time" />
+         </columns>
+         <columnResizePolicy>
+<!--            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="31.0" layoutY="25.0" text="Play Times">
+         <font>
+            <Font name="MyriadPro-Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

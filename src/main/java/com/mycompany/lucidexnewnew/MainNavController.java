@@ -18,6 +18,11 @@ import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import com.mycompany.util.UtilFunctions;
+import javafx.scene.Node;
+import javafx.scene.control.Button;
+import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
+import javax.swing.JFrame;
 
 /**
  * FXML Controller class
@@ -38,8 +43,11 @@ public class MainNavController implements Initializable {
     private JFXButton btnHelp;
     @FXML
     private JFXButton btnSettings;
-    @FXML
     private AnchorPane ap;
+    @FXML
+    private ImageView apnew;
+    @FXML
+    private Button closemain;
 
     /**
      * Initializes the controller class.
@@ -55,8 +63,8 @@ public class MainNavController implements Initializable {
     private void gohome(ActionEvent event) {
         
              bp.setCenter(ap);
-//         loadPage("AllGames");
-//         btnHome.requestFocus();
+         kk.loadPage("home", bp);
+         btnHome.requestFocus();
 
     }
     
@@ -71,7 +79,7 @@ public class MainNavController implements Initializable {
 
     @FXML
     private void goplaytimes(ActionEvent event) {
-          kk.loadPage("AllGames",  bp);
+          kk.loadPage("PlayTime",  bp);
          btnPlayTime.requestFocus();
     }
 
@@ -86,5 +94,17 @@ public class MainNavController implements Initializable {
           kk.loadPage("Settings",  bp);
             btnSettings.requestFocus();
     }
+
+    @FXML
+    private void closemainprogram(ActionEvent event) {
+
+            Node node = (Node) event.getSource();
+            Stage stage = (Stage) node.getScene().getWindow();
+            stage.close();
+
+        
+    }
+
+    
 
 }

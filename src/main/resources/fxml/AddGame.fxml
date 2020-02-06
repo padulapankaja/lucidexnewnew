@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--<?import com.jfoenix.controls.JFXButton?>-->
 <?import com.jfoenix.controls.JFXButton?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Label?>
@@ -11,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="945.0" style="-fx-background-color: #f7f7ff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lucidexnewnew.AddGameController"  >
+<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="945.0" style="-fx-background-color: #f7f7ff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lucidexnewnew.AddGameController">
     <stylesheets>
         <URL value="@/styles/addgame.css" />
     </stylesheets>
@@ -21,7 +20,7 @@
             <Font name="MyriadPro-Bold" size="23.0" />
          </font>
       </Label>
-  <JFXButton fx:id="btnBrowse" layoutX="173.0" layoutY="35.0" prefHeight="28.0" prefWidth="99.0" style="-fx-border-color: #000000; -fx-border-radius: 5 5 5 5;" text="Browse">
+      <JFXButton layoutX="173.0" layoutY="35.0" prefHeight="28.0" prefWidth="99.0" style="-fx-border-color: #000000; -fx-border-radius: 5 5 5 5;" text="Browse">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -67,18 +66,17 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <JFXButton fx:id="btnDownloadGameInfo" layoutX="31.0" layoutY="521.0" prefHeight="30.0" prefWidth="191.0" style="-fx-background-color: #5ab2d4;" text="Download Game Info" textFill="WHITE">
+            <JFXButton layoutX="31.0" layoutY="521.0" prefHeight="30.0" prefWidth="191.0" style="-fx-background-color: #5ab2d4;" text="Download Game Info" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </JFXButton>
          </children>
       </AnchorPane>
-    <JFXButton  fx:id="btnSave" layoutX="32.0" layoutY="670.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #46a65d;" text="Save" textFill="WHITE">
+      <JFXButton layoutX="32.0" layoutY="670.0" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #46a65d;" text="Save" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      
    </children>
 </AnchorPane>

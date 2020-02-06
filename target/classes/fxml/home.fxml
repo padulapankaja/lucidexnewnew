@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="823.0" prefWidth="945.0" style="-fx-background-color: #ffffff;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lucidexnewnew.HomeController">
+    <stylesheets>
+        <URL value="@/styles/home.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="57.0" layoutY="259.0" prefHeight="218.0" prefWidth="166.0" style="-fx-background-color: #4f99b6;" styleClass="cards" stylesheets="@../styles/allgames.css">
+         <children>
+            <ImageView fitHeight="132.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../GFX/Layer%2011.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="11.0" layoutY="120.0" prefHeight="52.0" prefWidth="110.0" text="Farcry 4 Edens Gate" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="37.0" layoutY="177.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="Play">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/gamepad.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="283.0" layoutY="259.0" prefHeight="218.0" prefWidth="166.0" style="-fx-background-color: #e65c62;" styleClass="cards" stylesheets="@../styles/allgames.css">
+         <children>
+            <ImageView fitHeight="132.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../GFX/Layer%208.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="11.0" layoutY="120.0" prefHeight="52.0" prefWidth="128.0" text="Red Dead Redemption 2" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="37.0" layoutY="177.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="Play">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/gamepad.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="511.0" layoutY="259.0" prefHeight="218.0" prefWidth="166.0" style="-fx-background-color: #e65c62;" styleClass="cards" stylesheets="@../styles/allgames.css">
+         <children>
+            <ImageView fitHeight="132.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../GFX/Layer%209.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="11.0" layoutY="120.0" prefHeight="52.0" prefWidth="128.0" text="Call Of Duty Ghosts" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="37.0" layoutY="177.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="Play">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/gamepad.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="736.0" layoutY="259.0" prefHeight="218.0" prefWidth="166.0" style="-fx-background-color: #ee7d32;" styleClass="cards" stylesheets="@../styles/allgames.css">
+         <children>
+            <ImageView fitHeight="132.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../GFX/Layer%2010.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="11.0" layoutY="120.0" prefHeight="52.0" prefWidth="128.0" text="Need For Speed Mostwanted" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="37.0" layoutY="177.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" text="Play">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/gamepad.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="59.0" layoutY="38.0" prefHeight="130.0" prefWidth="828.0" styleClass="anchorpane" stylesheets="@../styles/allgames.css">
+         <children>
+            <Label layoutX="22.0" layoutY="55.0" text="Welcome!">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="83.0" text="Hi Username, This is time to track your playing time">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="275.0" layoutY="14.0" text="Game Time Tracker">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../GFX/gamepad.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="57.0" layoutY="207.0" text="Recent Games">
+         <font>
+            <Font name="MyriadPro-Bold" size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="59.0" layoutY="524.0" prefHeight="273.0" prefWidth="828.0" styleClass="anchorpane" stylesheets="@../styles/allgames.css">
+         <children>
+            <Label layoutX="22.0" layoutY="6.0" text="Total Gameplay">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <BarChart layoutX="22.0" layoutY="39.0" prefHeight="228.0" prefWidth="754.0">
+              <xAxis>
+                <CategoryAxis prefWidth="697.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

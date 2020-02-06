@@ -1,5 +1,6 @@
 com\mycompany\lucidexnewnew\GameDetailsController.class
 com\mycompany\util\UtilFunctions.class
+com\mycompany\lucidexnewnew\PlayTimeController.class
 com\mycompany\lucidexnewnew\SignUpController.class
 com\mycompany\lucidexnewnew\MainApp.class
 com\mycompany\lucidexnewnew\SettingsController.class
@@ -8,6 +9,7 @@ com\mycompany\services\UserAuditServiceIml.class
 com\mycompany\util\SqlScripts.class
 com\mycompany\lucidexnewnew\SignInController.class
 com\mycompany\model\Users.class
+com\mycompany\lucidexnewnew\HomeController.class
 com\mycompany\services\IUserAuditService.class
 com\mycompany\lucidexnewnew\HelpController.class
 com\mycompany\lucidexnewnew\AddGameController.class

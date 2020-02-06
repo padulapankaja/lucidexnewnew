@@ -19,19 +19,14 @@ import javafx.fxml.Initializable;
  */
 public class AddGameController implements Initializable {
 
-    @FXML
-    private JFXButton btnBrowse;
-    @FXML
-    private JFXButton btnDownloadGameInfo;
-    @FXML
-    private JFXButton btnSave;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+                                     
+
     }
 
 }

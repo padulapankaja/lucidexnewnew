@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.anchorpane {
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+    -fx-border-radius: 9 9 9 9;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 9 9 9 9;
+}
+
+.cards
+{
+
+    -fx-background-radius: 12 12 12 12;
+    -fx-border-radius:12 12 12 12;
+}
