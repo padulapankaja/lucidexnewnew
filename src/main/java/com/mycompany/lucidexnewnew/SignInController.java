@@ -7,6 +7,7 @@ package com.mycompany.lucidexnewnew;
  */
 import com.jfoenix.controls.JFXButton;
 import com.mycompany.model.UserAudit;
+import com.mycompany.model.Users;
 import com.mycompany.services.IUserAuditService;
 import com.mycompany.services.IUserService;
 import com.mycompany.services.UserAuditServiceIml;
@@ -97,10 +98,11 @@ public class SignInController implements Initializable {
         //if user valid map to main nav
         if (users > 0) {
 
+           
             LocalDate currentTime = java.time.LocalDate.now();
 
            
-
+               
             Calendar calendar = Calendar.getInstance();
 
             SimpleDateFormat formatter = new SimpleDateFormat("YYY-MM-DD HH:mm:ss");
@@ -111,6 +113,13 @@ public class SignInController implements Initializable {
 
             userAudit.lastLoginDetails(useraudit);
 
+            Users user = new Users();
+            
+            user.setUserName(Username);
+            user.setId(userService.getUserId(Username));
+            
+            
+            
             Node node = (Node) event.getSource();
             Stage stage = (Stage) node.getScene().getWindow();
             stage.close();

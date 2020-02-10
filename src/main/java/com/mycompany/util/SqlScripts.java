@@ -22,6 +22,8 @@ public class SqlScripts {
 
     
     public static final String USERAUDITINSERT = "INSERT INTO useraudit (uid, date, time) VALUES ( ? , ? , ?)";
+    
+    public static final String GETUSERFROMNAME = " Select * from users where UserEmail = ? ";
 
 
     

@@ -143,4 +143,27 @@ public class UserServiceIml implements IUserService {
         return userId;
     }
 
+    public Users getuserfromName(String Username) {
+
+        Users user = new Users();
+        try {
+            connection = DBConnection.ConDB();
+            preparedStatement = connection.prepareStatement(sqlscripts.GETUSERFROMNAME);
+            connection.setAutoCommit(false);
+            preparedStatement.setString(1, Username);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+
+                user.setId(resultSet.getInt(1));
+                user.setUserName(resultSet.getString(2));
+                user.setEmail(resultSet.getString(3));
+
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(UserServiceIml.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return user;
+    }
+
 }

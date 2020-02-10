@@ -16,6 +16,16 @@ public class Users {
     private String userName;
     private String email ;
     private String password;
+    private int Id;
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int Id) {
+        this.Id = Id;
+    }
+    
 
     public String getUserName() {
         return userName;

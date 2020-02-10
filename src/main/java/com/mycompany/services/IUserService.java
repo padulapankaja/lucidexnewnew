@@ -21,5 +21,6 @@ public interface IUserService {
     
      //get userId  from username
     public int getUserId(String userEmail);
+        public Users getuserfromName(String Username);
 
 }

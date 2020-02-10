@@ -21,7 +21,7 @@ public class MainApp extends Application {
         stage.setTitle("JavaFX and Maven");
         stage.setScene(scene);
         stage.resizableProperty().setValue(false);
-         stage.initStyle(StageStyle.UNDECORATED);
+       //  stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
     }
 
